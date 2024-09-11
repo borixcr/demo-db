@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: demo-database
+  description: A PostgreSQL database used by demo-service-001
+  annotations:
+    backstage.io/owner: team A
+spec:
+  type: database
+  system: demo-system
+  lifecycle: production
+  dependsOn:
+    - component: demo-service-001
+  resourceType: postgres
