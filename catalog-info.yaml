@@ -7,7 +7,7 @@ metadata:
     backstage.io/owner: team A
 spec:
   type: database
-  system: demo-system
+  system: BKSTG-DEMO
   lifecycle: production
   dependsOn:
     - component: demo-service-001
