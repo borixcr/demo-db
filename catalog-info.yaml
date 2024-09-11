@@ -6,10 +6,10 @@ metadata:
   annotations:
     backstage.io/owner: team A
 spec:
-  owner: borixcr
   type: database
   system: BKSTG-DEMO
   lifecycle: production
+  owner: borixcr
   dependsOn:
     - component: demo-service-001
   resourceType: postgres
